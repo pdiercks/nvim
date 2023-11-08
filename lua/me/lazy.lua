@@ -13,6 +13,8 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
 
+	-- the pope
+	{'tpope/vim-fugitive'},
 
 	-- Fuzzy Finder (files, lsp, etc)
 	{
@@ -42,6 +44,14 @@ require("lazy").setup({
 		config = function()
 			vim.cmd.colorscheme 'rose-pine'
 		end,
+	},
+	{
+		-- Highlight, edit, and navigate code
+		'nvim-treesitter/nvim-treesitter',
+		dependencies = {
+			'nvim-treesitter/nvim-treesitter-textobjects',
+		},
+		build = ":TSUpdate",
 	},
 
   }, {})
