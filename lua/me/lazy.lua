@@ -53,5 +53,11 @@ require("lazy").setup({
 		},
 		build = ":TSUpdate",
 	},
+	{
+		-- Comment using gcc, gbc etc.
+		'numToStr/Comment.nvim',
+		opts = {},
+		lazy = false,
+	}
 
   }, {})
