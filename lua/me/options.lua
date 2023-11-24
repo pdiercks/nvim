@@ -6,7 +6,7 @@ vim.opt.incsearch = true
 vim.opt.termguicolors = true
 
 -- behaviour
-vim.opt.scrolloff = 8
+vim.opt.scrolloff = 0
 vim.opt.updatetime = 50
 vim.opt.linebreak = true
 vim.opt.tabstop = 4
