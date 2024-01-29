@@ -31,13 +31,13 @@ require("formatter").setup({
 		},
 
 		python = {
-            function ()
-                return {
-                    exe = vim.fn.stdpath("data") .. "/mason/bin/ruff",
-                    args = {"format", "-q", "-" },
-                    stdin = true,
-                }
-            end,
+			function()
+				return {
+					exe = vim.fn.stdpath("data") .. "/mason/bin/ruff",
+					args = { "format", "-q", "-" },
+					stdin = true,
+				}
+			end,
 		},
 
 		-- Use the special "*" filetype for defining formatter configurations on
