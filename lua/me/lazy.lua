@@ -94,4 +94,6 @@ require("lazy").setup({
 	},
 	-- Formatter
 	{ "mhartington/formatter.nvim" },
+	-- Vimtex
+	{ "lervag/vimtex" },
 }, {})
