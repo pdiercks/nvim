@@ -4,6 +4,7 @@ vim.opt.incsearch = true
 
 -- bling
 vim.opt.termguicolors = true
+vim.opt.showmode = false
 
 -- behaviour
 vim.opt.scrolloff = 0
