@@ -90,6 +90,8 @@ require("lazy").setup({
 			{ "rafamadriz/friendly-snippets" },
 		},
 	},
+	-- Source for nvim-cmp
+	{ "saadparwaiz1/cmp_luasnip" },
 	-- Formatter
 	{ "mhartington/formatter.nvim" },
 	-- Vimtex
