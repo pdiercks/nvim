@@ -79,17 +79,15 @@ require("lazy").setup({
 		lazy = true,
 		config = false,
 	},
+	{ "neovim/nvim-lspconfig" },
+	{ "hrsh7th/cmp-nvim-lsp" },
+	-- Completion engine
+	{ "hrsh7th/nvim-cmp" },
+	-- Snippet engine
 	{
-		"neovim/nvim-lspconfig",
+		"L3MON4D3/LuaSnip",
 		dependencies = {
-			{ "hrsh7th/cmp-nvim-lsp" },
-		},
-	},
-	{
-		-- Autocompletion
-		"hrsh7th/nvim-cmp",
-		dependencies = {
-			{ "L3MON4D3/LuaSnip" },
+			{ "rafamadriz/friendly-snippets" },
 		},
 	},
 	-- Formatter
