@@ -6,6 +6,9 @@ vim.opt.incsearch = true
 vim.opt.termguicolors = true
 vim.opt.showmode = false
 
+-- completeopt
+vim.opt.completeopt = "menu,menuone,noselect"
+
 -- behaviour
 vim.opt.scrolloff = 0
 vim.opt.updatetime = 50
