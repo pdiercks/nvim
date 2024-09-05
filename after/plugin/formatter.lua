@@ -34,7 +34,7 @@ require("formatter").setup({
 			function()
 				return {
 					exe = vim.fn.stdpath("data") .. "/mason/bin/ruff",
-					args = { "format", "-q", "-" },
+					args = { "check", "--fix-only", "-v", "-" },
 					stdin = true,
 				}
 			end,
