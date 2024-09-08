@@ -25,12 +25,6 @@ return {
 		},
 	},
 	{
-		-- Colorscheme
-		"rose-pine/neovim",
-		name = "rose-pine",
-		priority = 1000,
-	},
-	{
 		-- Highlight, edit, and navigate code
 		"nvim-treesitter/nvim-treesitter",
 		dependencies = {
@@ -46,43 +40,38 @@ return {
 	},
 	{
 		-- Set lualine as statusline
-		"nvim-lualine/lualine.nvim",
 		-- See `:help lualine.txt`
+		'nvim-lualine/lualine.nvim',
 		opts = {
 			options = {
 				icons_enabled = true,
-				theme = "rose-pine",
-				component_separators = "|",
-				section_separators = "",
+				theme = 'auto',
+				component_separators = '|',
+				section_separators = '',
 			},
 		},
 	},
+	-- LSP Support
+	{ "VonHeikemen/lsp-zero.nvim", branch = "v4.x" },
 	-- Manage LSP servers and more
 	{ "williamboman/mason.nvim" },
 	{ "williamboman/mason-lspconfig.nvim" },
-	-- LSP Support
-	{
-		"VonHeikemen/lsp-zero.nvim",
-		branch = "v3.x",
-		lazy = true,
-		config = false,
-	},
 	{ "neovim/nvim-lspconfig" },
 	{ "hrsh7th/cmp-nvim-lsp" },
 	{ "hrsh7th/cmp-nvim-lsp-signature-help" },
 	-- Completion engine
 	{ "hrsh7th/nvim-cmp" },
 	-- Snippet engine
-	{
-		"L3MON4D3/LuaSnip",
-		dependencies = {
-			{ "rafamadriz/friendly-snippets" },
-		},
-	},
+	-- {
+	-- 	"L3MON4D3/LuaSnip",
+	-- 	dependencies = {
+	-- 		{ "rafamadriz/friendly-snippets" },
+	-- 	},
+	-- },
 	-- Source for nvim-cmp
-	{ "saadparwaiz1/cmp_luasnip" },
+	-- { "saadparwaiz1/cmp_luasnip" },
 	-- Formatter
-	{ "mhartington/formatter.nvim" },
+	{ "stevearc/conform.nvim", opts = {} },
 	-- Vimtex
 	{ "lervag/vimtex" },
 }
