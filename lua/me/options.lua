@@ -1,5 +1,5 @@
 -- search
-vim.opt.hlsearch = false
+vim.opt.hlsearch = true
 vim.opt.incsearch = true
 
 -- bling
@@ -16,3 +16,7 @@ vim.opt.linebreak = true
 vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.expandtab = true
+
+-- line numbers
+vim.o.number = true
+vim.o.relativenumber = true
