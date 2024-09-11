@@ -9,3 +9,6 @@ vim.keymap.set("t", "<Esc>", "<C-\\><C-n>")
 
 -- nohl with <Esc> in normal mode
 vim.keymap.set("n", "<Esc>", vim.cmd.nohl)
+
+-- interactions with windows
+vim.keymap.set("n", "<leader>w", "<C-w>")
