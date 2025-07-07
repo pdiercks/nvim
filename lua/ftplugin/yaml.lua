@@ -1,2 +1,2 @@
 " set yaml indent to 2 because list objectts are weird otherwise
-set shiftwidth=2
+vim.cmd("set shiftwidth=2")
