@@ -1,5 +1,4 @@
 return {
-    { "tpope/vim-fugitive" },
 	{
 		-- Comment using gcc, gbc etc.
 		"numToStr/Comment.nvim",
@@ -20,9 +19,9 @@ return {
 			},
 		},
 	},
-    {
-        "ibhagwan/fzf-lua",
-        dependencies = { "nvim-tree/nvim-web-devicons" },
-        opts = {},
-    },
+	{
+	"ibhagwan/fzf-lua",
+	dependencies = { "nvim-tree/nvim-web-devicons" },
+	opts = {},
+	},
 }

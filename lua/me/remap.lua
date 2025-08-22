@@ -12,3 +12,7 @@ vim.keymap.set("n", "<Esc>", vim.cmd.nohl)
 
 -- interactions with windows
 vim.keymap.set("n", "<leader>w", "<C-w>")
+
+-- easier access to tags/go-to-definition
+-- see :help lsp-defaults
+vim.keymap.set("n", "ü", "<C-]>")
